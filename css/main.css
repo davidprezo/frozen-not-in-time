@@ -1,0 +1,167 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+h1 {
+  color: #990073;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  transform: rotate(-10deg);
+}
+
+p {
+  color: #c09;
+  text-shadow: 1px 1px rgba(0, 0, 0, .5);
+  max-width: 19em;
+  transform: rotate(-5deg);
+}
+
+.banner {
+  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  overflow: hidden;
+  border-top: 7px solid #b3fbff;
+  border-bottom: 7px solid #b3fbff;
+  padding-bottom: 4em;
+}
+
+.banner-content {
+  opacity: 0;
+  transform-origin: left center;
+  animation: blur .5s 600ms linear forwards;
+  padding-top: 2.5em;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+}
+
+.btn-ghost {
+  color: #c09;
+  border: 3px solid #990073;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  color: #c09;
+  border: 3px solid #990073;
+  background-color: #d4fdff;
+}
+
+img {
+  width: 175px;
+  top: -5em;
+}
+
+.cherry {
+  top: -1400px;
+  left: calc(78% - 85px);
+  animation: cherry 700ms linear forwards;
+  z-index: 10;
+}
+
+.vanilla-fudge {
+  top: -1000px;
+  left: calc(78% - 90px);
+  animation: fudge 600ms linear forwards;
+  z-index: 9;
+}
+
+.chocolate-chip {
+  top: -1000px;
+  left: calc(78% - 80px);
+  animation: chocolate-chip 500ms linear forwards;
+  z-index: 8;
+}
+
+.mint-chip {
+  top: -1000px;
+  left: calc(78% - 90px);
+  animation: mint-chip 400ms linear forwards;
+  z-index: 7;
+}
+
+.cone {
+  top: -1000px;
+  left: calc(78% - 90px);
+  animation: cone 300ms linear forwards;
+  z-index: 11;
+}
+
+@keyframes blur {
+
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes cherry {
+
+  0% {
+    top: -1400px;
+  }
+
+  100% {
+    top: -40px;
+  }
+
+}
+
+@keyframes fudge {
+
+  0% {
+    top: -1300px;
+  }
+
+  100% {
+    top: 30px;
+  }
+
+}
+
+@keyframes chocolate-chip {
+
+  0% {
+    top: -1400px;
+  }
+
+  100% {
+    top: 100px;
+  }
+
+}
+
+@keyframes mint-chip {
+
+  0% {
+    top: -1500px;
+  }
+
+  100% {
+    top: 185px;
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    top: -1600px;
+  }
+
+  100% {
+    top: 285px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner-content {
+    padding-left: 10em;
+    padding-top: 2em;
+  }
+
+}
